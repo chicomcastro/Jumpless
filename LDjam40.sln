@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDjam40.Plugins", "LDjam40.Plugins.csproj", "{A0574C70-45F9-A6F2-411D-56EFDAAD5AAD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDjam40", "LDjam40.csproj", "{1C168A90-C2E0-241B-64FD-7A4AA08AAFB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDjam40.Editor", "LDjam40.Editor.csproj", "{DC094E06-2D24-2387-B8C2-689392BF4800}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0574C70-45F9-A6F2-411D-56EFDAAD5AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0574C70-45F9-A6F2-411D-56EFDAAD5AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0574C70-45F9-A6F2-411D-56EFDAAD5AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0574C70-45F9-A6F2-411D-56EFDAAD5AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C168A90-C2E0-241B-64FD-7A4AA08AAFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C168A90-C2E0-241B-64FD-7A4AA08AAFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C168A90-C2E0-241B-64FD-7A4AA08AAFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C168A90-C2E0-241B-64FD-7A4AA08AAFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC094E06-2D24-2387-B8C2-689392BF4800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC094E06-2D24-2387-B8C2-689392BF4800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC094E06-2D24-2387-B8C2-689392BF4800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC094E06-2D24-2387-B8C2-689392BF4800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

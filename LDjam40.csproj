@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1C168A90-C2E0-241B-64FD-7A4AA08AAFB8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp.dll</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -76,18 +76,39 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="Managed/Mono.Cecil">
+      <HintPath>C:/Program Files/Unity/Editor/Data\Managed/Mono.Cecil.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="LDjam40.Plugins.csproj">
-      <Project>{A0574C70-45F9-A6F2-411D-56EFDAAD5AAD}</Project>
-      <Name>LDjam40.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\BulletMover.cs" />
-    <Compile Include="Assets\EnemyBehaviour.cs" />
-    <Compile Include="Assets\EnemySpawner.cs" />
-    <Compile Include="Assets\StopAttack.cs" />
+    <Compile Include="Assets\_Script\BulletMover.cs" />
+    <Compile Include="Assets\_Script\EnemyBehaviour.cs" />
+    <Compile Include="Assets\_Script\EnemySpawner.cs" />
+    <Compile Include="Assets\_Script\StopAttack.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\CameraFollow.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\DifferentSpeeds\DifferentSpeeds.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\LadderBody.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\LadderZone.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\MotorMonitor.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\Moving Platforms\SimpleBoost.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\Moving Platforms\SimpleCollapsable.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\Moving Platforms\SimpleLeftRight.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\Moving Platforms\SimpleUpDown.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\RestrictedArea.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\Simple AI\SimpleAI.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\SpriteDebug.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Example\Triggers\MessageOnCollision.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Scripts\EasingFunctions.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Scripts\Globals.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Scripts\MovingPlatformMotor2D.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Scripts\PlatformerAnimation2D.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Scripts\PlatformerMotor2D.cs" />
+    <Compile Include="Assets\Imported Assets\PC2D\Scripts\PlayerController2D.cs" />
+    <Compile Include="Assets\Imported Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\Imported Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Imported Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Imported Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\Imported Assets\Standard Assets\2D\Scripts\Restarter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
