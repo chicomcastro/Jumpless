@@ -50,13 +50,18 @@ public class PlayerController2D : MonoBehaviour
 
         // Jump?
         // If you want to jump in ladders, leave it here, otherwise move it down
-        if (Input.GetButtonDown(PC2D.Input.JUMP))
+        if (Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
         {
             _motor.Jump();
             _motor.DisableRestrictedArea();
         }
 
-        _motor.jumpingHeld = Input.GetButton(PC2D.Input.JUMP);
+		if (Input.GetKeyDown("e"))
+		{
+			gameObject.GetComponent<PC2D.PlatformerAnimation2D>().Attack();
+		}
+
+		_motor.jumpingHeld = true; // Input.GetKey("w");// Input.GetButton(PC2D.Input.JUMP);
 
         // XY freedom movement
         if (_motor.motorState == PlatformerMotor2D.MotorState.FreedomState)
@@ -77,6 +82,7 @@ public class PlayerController2D : MonoBehaviour
             _motor.normalizedXMovement = 0;
         }
 
+		// Y axis movement
         if (Input.GetAxis(PC2D.Input.VERTICAL) != 0)
         {
             bool up_pressed = Input.GetAxis(PC2D.Input.VERTICAL) > 0;

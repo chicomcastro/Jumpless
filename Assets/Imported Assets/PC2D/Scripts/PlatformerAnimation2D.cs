@@ -18,6 +18,8 @@ namespace PC2D
         private bool _isJumping;
         private bool _currentFacingLeft;
 
+		public bool _isAttacking = false;
+
         // Use this for initialization
         void Start()
         {
@@ -39,11 +41,11 @@ namespace PC2D
                 _isJumping = true;
                 _animator.Play("Jump");
 
-                if (_motor.velocity.x <= -0.1f)
+                if (_motor.velocity.x <= -0.01f)
                 {
                     _currentFacingLeft = true;
                 }
-                else if (_motor.velocity.x >= 0.1f)
+                else if (_motor.velocity.x >= 0.01f)
                 {
                     _currentFacingLeft = false;
                 }
@@ -53,42 +55,45 @@ namespace PC2D
             }
             else
             {
-                _isJumping = false;
-                visualChild.transform.rotation = Quaternion.identity;
+				if (!_isAttacking)
+				{
+					_isJumping = false;
+					visualChild.transform.rotation = Quaternion.identity;
 
-                if (_motor.motorState == PlatformerMotor2D.MotorState.Falling ||
-                                 _motor.motorState == PlatformerMotor2D.MotorState.FallingFast)
-                {
-                    _animator.Play("Fall");
-                }
-                else if (_motor.motorState == PlatformerMotor2D.MotorState.WallSliding ||
-                         _motor.motorState == PlatformerMotor2D.MotorState.WallSticking)
-                {
-                    _animator.Play("Cling");
-                }
-                else if (_motor.motorState == PlatformerMotor2D.MotorState.OnCorner)
-                {
-                    _animator.Play("On Corner");
-                }
-                else if (_motor.motorState == PlatformerMotor2D.MotorState.Slipping)
-                {
-                    _animator.Play("Slip");
-                }
-                else if (_motor.motorState == PlatformerMotor2D.MotorState.Dashing)
-                {
-                    _animator.Play("Dash");
-                }
-                else
-                {
-                    if (_motor.velocity.sqrMagnitude >= 0.1f * 0.1f)
-                    {
-                        _animator.Play("Walk");
-                    }
-                    else
-                    {
-                        _animator.Play("Idle");
-                    }
-                }
+					if (_motor.motorState == PlatformerMotor2D.MotorState.Falling ||
+									 _motor.motorState == PlatformerMotor2D.MotorState.FallingFast)
+					{
+						_animator.Play("Fall");
+					}
+					else if (_motor.motorState == PlatformerMotor2D.MotorState.WallSliding ||
+							 _motor.motorState == PlatformerMotor2D.MotorState.WallSticking)
+					{
+						_animator.Play("Cling");
+					}
+					else if (_motor.motorState == PlatformerMotor2D.MotorState.OnCorner)
+					{
+						_animator.Play("On Corner");
+					}
+					else if (_motor.motorState == PlatformerMotor2D.MotorState.Slipping)
+					{
+						_animator.Play("Slip");
+					}
+					else if (_motor.motorState == PlatformerMotor2D.MotorState.Dashing)
+					{
+						_animator.Play("Dash");
+					}
+					else
+					{
+						if (_motor.velocity.sqrMagnitude >= 0.1f * 0.1f)
+						{
+							_animator.Play("Walk");
+						}
+						else
+						{
+							_animator.Play("Idle");
+						}
+					}
+				}
             }
 
             // Facing
@@ -112,6 +117,12 @@ namespace PC2D
         private void SetCurrentFacingLeft()
         {
             _currentFacingLeft = _motor.facingLeft;
-        }
-    }
+		}
+
+		public void Attack()
+		{
+			_isAttacking = true;
+			_animator.Play("Attack");
+		}
+	}
 }

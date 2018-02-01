@@ -82,9 +82,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Script\BulletMover.cs" />
-    <Compile Include="Assets\_Script\EnemyBehaviour.cs" />
+    <Compile Include="Assets\_Script\CreatureBehaviour.cs" />
     <Compile Include="Assets\_Script\EnemySpawner.cs" />
+    <Compile Include="Assets\_Script\IACreatureController2D.cs" />
     <Compile Include="Assets\_Script\StopAttack.cs" />
+    <Compile Include="Assets\_Script\StopAttacking.cs" />
+    <Compile Include="Assets\Imported Assets\LevelGenerator2D\ColorToPrefab.cs" />
+    <Compile Include="Assets\Imported Assets\LevelGenerator2D\LevelGenerator.cs" />
     <Compile Include="Assets\Imported Assets\PC2D\Example\CameraFollow.cs" />
     <Compile Include="Assets\Imported Assets\PC2D\Example\DifferentSpeeds\DifferentSpeeds.cs" />
     <Compile Include="Assets\Imported Assets\PC2D\Example\LadderBody.cs" />

@@ -5,15 +5,14 @@ namespace  PC2D
 {
     public class SimpleAI : MonoBehaviour
     {
-        public float distanceCheckForJump;
-        public float heightToFallFast;
-        public float delayForWallJump;
+        public float distanceCheckForJump = 4f;
+        public float heightToFallFast = 4f;
+        public float delayForWallJump = 0.1f;
 
         private PlatformerMotor2D _motor;
 
         public float movement { get; private set; }
-
-        // Use this for initialization
+		
         void Start()
         {
             _motor = GetComponent<PlatformerMotor2D>();
@@ -31,11 +30,14 @@ namespace  PC2D
                 dir =>
                 {
                     // Since the motor needs to be pressing into the wall to wall jump, we switch direction after the jump.
-                    movement = Mathf.Sign(dir.x);
-                };
-        }
 
-        // Update is called once per frame
+					if (Random.value > 0.4f)
+	                    movement = Mathf.Sign(dir.x);
+					else
+						movement = -Mathf.Sign(dir.x);
+				};
+        }
+		
         void FixedUpdate()
         {
             _motor.normalizedXMovement = movement;
@@ -64,10 +66,15 @@ namespace  PC2D
 
             if (_motor.motorState == PlatformerMotor2D.MotorState.WallSticking)
             {
-                StartCoroutine(DelayWallJump());
+				StartCoroutine(DelayWallJump(Random.Range(delayForWallJump, 1f)));
             }
 
-            if (_motor.motorState == PlatformerMotor2D.MotorState.Falling)
+			if (_motor.motorState == PlatformerMotor2D.MotorState.OnCorner)
+			{
+				StartCoroutine(DelayWallJump(Random.Range(0.5f, 2f)));
+			}
+
+			if (_motor.motorState == PlatformerMotor2D.MotorState.Falling)
             {
                 RaycastHit2D hit = Physics2D.Raycast(
                     transform.position,
@@ -96,7 +103,7 @@ namespace  PC2D
             }
         }
 
-        private IEnumerator DelayWallJump()
+        private IEnumerator DelayWallJump(float delayForWallJump)
         {
             yield return new WaitForSeconds(delayForWallJump);
             _motor.Jump();

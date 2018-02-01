@@ -125,7 +125,7 @@ namespace UnityStandardAssets._2D
 			if (transform.localScale.x < 0)
 				qua = Quaternion.Euler(0, 0, 180);
 
-			GameObject go = Instantiate(shoot, transform.position, qua);
+			Instantiate(shoot, transform.position, qua);
 		}
     }
 }
