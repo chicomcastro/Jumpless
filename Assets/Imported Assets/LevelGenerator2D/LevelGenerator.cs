@@ -18,7 +18,7 @@ public class LevelGenerator : MonoBehaviour
 	{
 		if (generateAtStart)
 		{
-			//GenerateLevel();
+			GenerateLevel();
 		}
 	}
 

@@ -45,7 +45,7 @@ namespace UnityStandardAssets._2D
 			InvokeRepeating("TrackCamera", 0.5f, 0.05f);
 		}
 
-        private void Update()
+        private void LateUpdate()
 		{
 
 			TrackPlayer();
