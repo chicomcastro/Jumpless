@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 /// <summary>
 /// This class is a simple example of how to build a controller that interacts with PlatformerMotor2D.
@@ -50,45 +51,47 @@ public class PlayerController2D : MonoBehaviour
 
         // JUMP?
         // If you want to jump in ladders, leave it here, otherwise move it down
-        if (Input.GetButtonDown(PC2D.Input.JUMP))
+        if (CrossPlatformInputManager.GetButtonDown(PC2D.Input.JUMP))
         {
             _motor.Jump();
             _motor.DisableRestrictedArea();
 
             JumpCounter.instance.DiscountJump();
+
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Jump");
         }
 
         // ATACK
-		// if (Input.GetButtonDown("Fire1"))
-		// {
-		// 	gameObject.GetComponent<PC2D.PlatformerAnimation2D>().Attack();
-		// }
+        // if (Input.GetButtonDown("Fire1"))
+        // {
+        // 	gameObject.GetComponent<PC2D.PlatformerAnimation2D>().Attack();
+        // }
 
-		_motor.jumpingHeld = Input.GetButton(PC2D.Input.JUMP);
+        _motor.jumpingHeld = CrossPlatformInputManager.GetButton(PC2D.Input.JUMP);
 
         // XY freedom movement
         if (_motor.motorState == PlatformerMotor2D.MotorState.FreedomState)
         {
-            _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
-            _motor.normalizedYMovement = Input.GetAxis(PC2D.Input.VERTICAL);
+            _motor.normalizedXMovement = CrossPlatformInputManager.GetAxis(PC2D.Input.HORIZONTAL);
+            _motor.normalizedYMovement = CrossPlatformInputManager.GetAxis(PC2D.Input.VERTICAL);
 
             return; // do nothing more
         }
 
         // X axis movement
-        if (Mathf.Abs(Input.GetAxis(PC2D.Input.HORIZONTAL)) > PC2D.Globals.INPUT_THRESHOLD)
+        if (Mathf.Abs(CrossPlatformInputManager.GetAxis(PC2D.Input.HORIZONTAL)) > PC2D.Globals.INPUT_THRESHOLD)
         {
-            _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
+            _motor.normalizedXMovement = CrossPlatformInputManager.GetAxis(PC2D.Input.HORIZONTAL);
         }
         else
         {
             _motor.normalizedXMovement = 0;
         }
 
-		// Y axis movement
-        if (Input.GetAxis(PC2D.Input.VERTICAL) != 0)
+        // Y axis movement
+        if (CrossPlatformInputManager.GetAxis(PC2D.Input.VERTICAL) != 0)
         {
-            bool up_pressed = Input.GetAxis(PC2D.Input.VERTICAL) > 0;
+            bool up_pressed = CrossPlatformInputManager.GetAxis(PC2D.Input.VERTICAL) > 0;
             if (_motor.IsOnLadder())
             {
                 if (
@@ -113,19 +116,21 @@ public class PlayerController2D : MonoBehaviour
                     _motor.oneWayPlatformsAreWalls = false;
 
                     // start XY movement
-                    _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
-                    _motor.normalizedYMovement = Input.GetAxis(PC2D.Input.VERTICAL);
+                    _motor.normalizedXMovement = CrossPlatformInputManager.GetAxis(PC2D.Input.HORIZONTAL);
+                    _motor.normalizedYMovement = CrossPlatformInputManager.GetAxis(PC2D.Input.VERTICAL);
                 }
             }
         }
-        else if (Input.GetAxis(PC2D.Input.VERTICAL) < -PC2D.Globals.FAST_FALL_THRESHOLD)
+        else if (CrossPlatformInputManager.GetAxis(PC2D.Input.VERTICAL) < -PC2D.Globals.FAST_FALL_THRESHOLD)
         {
             _motor.fallFast = false;
         }
 
-        if (Input.GetButtonDown(PC2D.Input.DASH))
+        if (CrossPlatformInputManager.GetButtonDown(PC2D.Input.DASH))
         {
             _motor.Dash();
+
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Dash");
         }
     }
 }

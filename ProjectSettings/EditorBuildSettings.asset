@@ -6,24 +6,105 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/level1.unity
+    path: Assets/_Scenes/level1.unity
     guid: 29ddab1feb8de3749b5b32a857327476
   - enabled: 1
-    path: Assets/level2.unity
+    path: Assets/_Scenes/level2.unity
     guid: 4acefe39ec0554445bea9bdbfe1bcff0
   - enabled: 1
-    path: Assets/level3.unity
+    path: Assets/_Scenes/level3.unity
     guid: 6faa30b824c3568458c6a35dd1b4212b
   - enabled: 1
-    path: Assets/level4.unity
+    path: Assets/_Scenes/level4.unity
     guid: 7061ef30c2ba4514588716fd7a2e0c90
   - enabled: 1
-    path: Assets/level5.unity
+    path: Assets/_Scenes/level5.unity
     guid: b80359ade522d3d41bcf6a2f434579c3
   - enabled: 1
-    path: Assets/level6.unity
+    path: Assets/_Scenes/level6.unity
     guid: c7b3c9c75bb39ea49927f3082f9e8f49
   - enabled: 1
-    path: Assets/end.unity
+    path: Assets/_Scenes/end.unity
     guid: 39b7ec453dbce0c41a499594ceafbb54
+  - enabled: 1
+    path: Assets/_Scenes/main-menu.unity
+    guid: 9112444f8dcff5a4dafdf515852b9113
+  - enabled: 1
+    path: Assets/_Scenes/level-choose-puzzle.unity
+    guid: 0b3cca7548a96fa4dafed06501d73bcf
+  - enabled: 1
+    path: Assets/_Scenes/level-choose-comp.unity
+    guid: b11c976f4744b674da8becc470449825
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level1.unity
+    guid: b174c3b7432055649af61d6fc4762b56
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level2.unity
+    guid: ecae80b5487bf11408709d0825a99c34
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level3.unity
+    guid: 48fb62f4afdd5ce46a3d3b9c27b6e399
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level4.unity
+    guid: 62c12c748d2167947b3ea23fc68cddd7
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level5.unity
+    guid: 3e19742c2c9f5af40b4e4899be01c67b
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level6.unity
+    guid: dca87f83eb5c80c4a9d3d7afe23ea9ec
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level7.unity
+    guid: 26e45eebd97f8e449aed6a1da054936c
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level8.unity
+    guid: a4f7575c6c9320d41bc4e7c145a27f08
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level9.unity
+    guid: 8d9180dcf495ff443b670331b9905670
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level10.unity
+    guid: 7dd8a65b52c6dde4eae8aff0270cccc9
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level11.unity
+    guid: 3cb320110a6dc4e4c927f47973965dad
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level12.unity
+    guid: 1ddf250f11bf04546adec37465aeaf3f
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level13.unity
+    guid: 313a0cdf56b3cae459448dd22c6a6051
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level14.unity
+    guid: a5b3716b936a25f4f818cc18870095c8
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level15.unity
+    guid: 4617528e9fb659f49af5a02a77151451
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level16.unity
+    guid: cc84c15a753276f4bb27ff42f042d1f6
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level17.unity
+    guid: 38707e5a50e42464d87dd09160205478
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level18.unity
+    guid: 1e2710c7157019c4da4a5fb4e929bde0
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level19.unity
+    guid: 3276aa73b6729e64781a842b69f69383
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level20.unity
+    guid: 02e35c7e4c4b3d24d9b10837e98733c3
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level21.unity
+    guid: c23d333764300f3469e8272686e60df1
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level22.unity
+    guid: dc090714103919943bfd34bb72bcfacb
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level23.unity
+    guid: c16d11140c484a14688808004510bb39
+  - enabled: 1
+    path: Assets/_Scenes/Puzzles/puzzle-level24.unity
+    guid: 989f9ec67ab6d2244b33dd241c7d63b2
   m_configObjects: {}
