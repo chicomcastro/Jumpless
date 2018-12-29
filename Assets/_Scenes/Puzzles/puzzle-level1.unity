@@ -5000,11 +5000,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114322936833839828, guid: 1d1e88ea69d9a7f4f8ac7b66a67876ca,
-        type: 2}
-      propertyPath: sceneToCall
-      value: level3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d1e88ea69d9a7f4f8ac7b66a67876ca, type: 2}
   m_IsPrefabAsset: 0
@@ -5151,7 +5146,7 @@ Prefab:
     - target: {fileID: 114263027338374534, guid: 8366eb90dc69a4643b60ad35bde9f8f4,
         type: 2}
       propertyPath: maxJumps
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114263027338374534, guid: 8366eb90dc69a4643b60ad35bde9f8f4,
         type: 2}

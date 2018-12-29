@@ -8,7 +8,8 @@ public class JumpCounter : MonoBehaviour
 
     public int maxJumps;
 
-    private int jumpCount;
+    [HideInInspector]
+    public int jumpCount;
     private bool haveFinished = false;
 
     public Text jumpText;

@@ -55,46 +55,49 @@ MonoBehaviour:
   sounds:
   - name: Dash
     clip: {fileID: 8300000, guid: 2e2604f72cf5957408cadf6eaaa1707f, type: 3}
+    soundType: 0
     volume: 1
-    volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Death
     clip: {fileID: 8300000, guid: edd7ad500b5059a47a313acc78272c42, type: 3}
+    soundType: 0
     volume: 1
-    volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 2568f2cf7293f09479eba61200ff88ed, type: 3}
+    soundType: 0
     volume: 1
-    volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: NewLevel
     clip: {fileID: 8300000, guid: 2ef1374afc55daf4a99d7e2523ec4d18, type: 3}
+    soundType: 0
     volume: 1
-    volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 18cc45741429eb94a8f39d3a9b35de3e, type: 3}
+    soundType: 1
     volume: 1
-    volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Fireworks
+    clip: {fileID: 8300000, guid: 9c26ffb2e0fa1944383760274edd6d2c, type: 3}
+    soundType: 0
+    volume: 1
+    pitch: 1
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}

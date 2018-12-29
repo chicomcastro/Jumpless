@@ -5656,7 +5656,7 @@ Prefab:
     - target: {fileID: 114263027338374534, guid: 8366eb90dc69a4643b60ad35bde9f8f4,
         type: 2}
       propertyPath: maxJumps
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114263027338374534, guid: 8366eb90dc69a4643b60ad35bde9f8f4,
         type: 2}

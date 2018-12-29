@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0A9747E5-D7A7-5E24-D0D4-5CD5E16BF59A}</ProjectGuid>
+    <ProjectGuid>{DF177CD2-7ACE-9B54-00F5-57EAE7364C6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -74,6 +74,8 @@
      <Compile Include="Assets\_Script\MineSurvival\StopAttack.cs" />
      <Compile Include="Assets\_Script\MineSurvival\StopAttacking.cs" />
      <Compile Include="Assets\AudioManagerSetter.cs" />
+     <Compile Include="Assets\DataHolder.cs" />
+     <Compile Include="Assets\FireworkManager.cs" />
      <Compile Include="Assets\Imported Assets\LevelGenerator2D\ColorToPrefab.cs" />
      <Compile Include="Assets\Imported Assets\LevelGenerator2D\LevelGenerator.cs" />
      <Compile Include="Assets\Imported Assets\PC2D\Example\CameraFollow.cs" />
@@ -135,19 +137,21 @@
      <Compile Include="Assets\Imported Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Imported Assets\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Imported Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\LevelNumberShower.cs" />
+     <Compile Include="Assets\SelectionManager.cs" />
      <None Include="Assets\Imported Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Imported Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

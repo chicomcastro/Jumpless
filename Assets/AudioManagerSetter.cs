@@ -4,7 +4,7 @@ public class AudioManagerSetter : MonoBehaviour
 {
     public GameObject audioManagerPrefab;
 
-    void Start()
+    void Awake()
     {
         GameObject audioManager = GameObject.Find("AudioManager");
         if (audioManager == null)

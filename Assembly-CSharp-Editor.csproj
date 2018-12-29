@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{12E15677-6F4E-9411-CECC-08E6CD821C26}</ProjectGuid>
+    <ProjectGuid>{0CC1F865-F533-D59E-83ED-BD6182CBA3DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -57,16 +57,16 @@
      <Compile Include="Assets\Imported Assets\PC2D\Editor\PlatformerMotor2DEditor.cs" />
      <Compile Include="Assets\Imported Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/LDjam40/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/FMMC_/Documents/_Devs/Unity Projects/Jumpless/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -371,7 +371,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{0A9747E5-D7A7-5E24-D0D4-5CD5E16BF59A}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{DF177CD2-7ACE-9B54-00F5-57EAE7364C6F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
